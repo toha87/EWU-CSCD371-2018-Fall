@@ -1,6 +1,6 @@
 Tools that will be needed for this course
 - git - https://git-scm.com/
-- dotnet core (version 2.1.4) - https://www.microsoft.com/net/download/dotnet-core/2.1
+- .NET Core (version 2.1.4) - https://www.microsoft.com/net/download/dotnet-core/2.1
 - VS Code recommended (or other editor of choice) - https://code.visualstudio.com/
   - helpful plugins
     - C# (ms-vscode.csharp)
