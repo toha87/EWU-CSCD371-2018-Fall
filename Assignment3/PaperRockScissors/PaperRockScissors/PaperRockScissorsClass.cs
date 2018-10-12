@@ -2,7 +2,7 @@
 
 namespace PaperRockScissors
 {
-    public class Program
+    public class PaperRockScissorsClass
     {
         public static void Main(string[] args)
         {
@@ -20,17 +20,10 @@ namespace PaperRockScissors
 
         public static string GetUserInput()
         {
-            Console.WriteLine("Do you choose rock, paper or scissors");
-            string userChoice = Console.ReadLine();
 
-            if (userChoice == "rock")
-                return userChoice;
-            else if (userChoice == "paper")
-                return userChoice;
-            else if (userChoice == "scissors")
-                return userChoice;
-            else
-                Console.WriteLine("You must choose rock, paper or scissors!");
+                Console.WriteLine("Do you choose rock, paper or scissors");
+                string userChoice = Console.ReadLine();
+
 
             return userChoice;
         }
@@ -150,14 +143,13 @@ namespace PaperRockScissors
 
         public static void WhoWon(Tuple<string, int> winner)
         {
-                Console.WriteLine("");
+
                 Console.WriteLine($"Congrats! {winner.Item1} won with score {winner.Item2}!");
         }
 
         public static bool PlayAgainMethod()
         {
             bool PlayAgain = true;
-            Console.WriteLine("");
             Console.WriteLine("Do you want to try again? Y/N");
             string res = Console.ReadLine();
             if (res == "Y" || res == "y")
