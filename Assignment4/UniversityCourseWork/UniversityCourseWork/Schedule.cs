@@ -2,7 +2,7 @@
 
 namespace UniversityCourseWork
 {
-    internal class Schedule: UniversityCourse
+    public class Schedule: UniversityCourse
     {
         public string CourseSchedule { get; set; }
 

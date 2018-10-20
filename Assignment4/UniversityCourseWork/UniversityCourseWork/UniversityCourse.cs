@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace UniversityCourseWork
 {
-    internal class UniversityCourse
+    public class UniversityCourse
     {
         public static int COUNT;
 
