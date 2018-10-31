@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityCourseWork", "UniversityCourseWork\UniversityCourseWork.csproj", "{2C29E5A2-C5CB-4FB1-B6E0-BAE90703A0B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityCourseWorkUnitTest", "UniversityCourseWorkUnitTest\UniversityCourseWorkUnitTest.csproj", "{1A9F4190-8C16-424A-BD8C-60AE440FBFF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C29E5A2-C5CB-4FB1-B6E0-BAE90703A0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C29E5A2-C5CB-4FB1-B6E0-BAE90703A0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C29E5A2-C5CB-4FB1-B6E0-BAE90703A0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C29E5A2-C5CB-4FB1-B6E0-BAE90703A0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9F4190-8C16-424A-BD8C-60AE440FBFF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9F4190-8C16-424A-BD8C-60AE440FBFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9F4190-8C16-424A-BD8C-60AE440FBFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9F4190-8C16-424A-BD8C-60AE440FBFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E6904AD-F318-40D8-8A5A-7344FCC64DE7}
+	EndGlobalSection
+EndGlobal
