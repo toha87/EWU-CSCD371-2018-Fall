@@ -14,7 +14,7 @@ namespace Assignment7UnitTest
         }
 
         [TestMethod]
-        public void NonNullableClassTestIsNotNull1()
+        public void NonNullableClassTestIsNotNull()
         {
             NonNullable<object> myNonNullable = new NonNullable<object>
             {
