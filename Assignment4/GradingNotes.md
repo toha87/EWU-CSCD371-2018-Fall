@@ -33,3 +33,7 @@ This is relatively unusual and possibly unexpected to the caller.  Use caution w
 ### 8. Should I group all fields together and then all properties together or should they be intermingled so that each field appears with its' property.
 
 I would stronly encourage the latter.  It isn't wrong to do it the other way but if you separate them then any changed to the property (such as the type or the name) would not be immediately obvious unless they were together.  Also, since fields should generally only be accessed from within their properties, the association (as though the field were part of the property definition) makes sense.
+
+### 9. Is it okay to property which simply sets and gets a field with no additional logic (perhaps using expression bodies members) or should I use an automatically implemented property?
+
+If the behavior is equivalent to an automatically implemented property then just use that.  To use anyything more adds clutter to the code without providing any value.
