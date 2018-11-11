@@ -45,3 +45,11 @@ No.  What would be the point.  If you have an instance of the `UniversityCourse`
 ### 11. Given a `UniversityCourse` that derives from an `Event`, should I explicity cast `UniversityCourse` to `Event`?
 
 No!  `UniversityCourse` "is an" `Event` so no case is required and doing so doesn't provide value.  In fact, it adds clutter and causes readers to look a second time to see if there is something special going on.
+
+### 12. What casing should I use for fields?
+
+I prefer `_FieldName` but `_fieldName` is also acceptable.  Avoid `fieldName` as that overlaps with local variable conventions.
+
+### 12. What casing should I use for properties?
+
+Use PascalCase (e.g. `PropertyName`).  Avoid `propertyName` as that overlaps with local variable conventions.
