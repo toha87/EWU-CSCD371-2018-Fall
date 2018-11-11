@@ -53,3 +53,7 @@ I prefer `_FieldName` but `_fieldName` is also acceptable.  Avoid `fieldName` as
 ### 13. What casing should I use for properties?
 
 Use PascalCase (e.g. `PropertyName`).  Avoid `propertyName` as that overlaps with local variable conventions.
+
+### 14. If I use `string.Split()` but there is no separator within the string that is split, can I rely on the exception thrown when accessing the array returned from `Split()` to provide validation?
+
+No, the exception thrown would be `IndexOutOfRangeException` which provides no information to the caller about what the problem was.  Instead, throw and `ArgumentException` that provides information to the caller about what to correct.
