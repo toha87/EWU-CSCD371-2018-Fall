@@ -37,3 +37,11 @@ I would stronly encourage the latter.  It isn't wrong to do it the other way but
 ### 9. Is it okay to property which simply sets and gets a field with no additional logic (perhaps using expression bodies members) or should I use an automatically implemented property?
 
 If the behavior is equivalent to an automatically implemented property then just use that.  To use anyything more adds clutter to the code without providing any value.
+
+### 10. Given a `UnivdrsityCourse` that derives from an `Event`, should I store an instance of the `Event` as a property on the `UniversityCourse`?
+
+No.  What would be the point.  If you have an instance of the `UniversityCourse` you have an instance of the event.  You should not store the base class as a property (or field) on the derived class.  
+
+### 11. Given a `UniversityCourse` that derives from an `Event`, should I explicity cast `UniversityCourse` to `Event`?
+
+No!  `UniversityCourse` "is an" `Event` so no case is required and doing so doesn't provide value.  In fact, it adds clutter and causes readers to look a second time to see if there is something special going on.
