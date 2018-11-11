@@ -50,6 +50,6 @@ No!  `UniversityCourse` "is an" `Event` so no case is required and doing so does
 
 I prefer `_FieldName` but `_fieldName` is also acceptable.  Avoid `fieldName` as that overlaps with local variable conventions.
 
-### 12. What casing should I use for properties?
+### 13. What casing should I use for properties?
 
 Use PascalCase (e.g. `PropertyName`).  Avoid `propertyName` as that overlaps with local variable conventions.
