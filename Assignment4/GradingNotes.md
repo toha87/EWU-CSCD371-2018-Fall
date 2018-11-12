@@ -120,3 +120,7 @@ Yes, almost always unless you have a specific reason not to but it would be high
 ### 28. Which is preferable, `string`, the key word, or `String` the .NET Type?
 
 Generally use `string` but whichever you choose, be consistent throughout.  Don't use both.
+
+### 29. Is it okay to have public fields?
+
+Public, even protected fields should be avoided.  Just use properties or make the field private and wrap it with a property.
