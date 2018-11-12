@@ -77,7 +77,7 @@ Almost certainly it should be private.  Allowing another class to modify the val
 
 ### 18. Is it okay to have properties that are reference types and allow null.
 
-Certainly... However, you need to be check for null befroe dereferencing. In general you should avoid allowing collection properties to be null.
+Certainly... However, you need to be check for null befroe dereferencing. In general you should avoid allowing collection properties to be null.  This, of course, assumes that null is a valid value for the property.  Null, for example, for a person or events name is unlikely to be valid.
 
 ### 19. Should I keep track of `UniversityCourse` instances separately from `Event` instance count?
 
