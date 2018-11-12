@@ -86,3 +86,7 @@ If `UniversityCourse` derives from `Event` then every time you create a `Univers
 ### 20. What exception type should be thrown when a value assigned to a property is not valid?
 
 When assigned null and it isn't value use `ArgumentNullException`.  For values other than null, `ArgumentException` is generally correct unless another exception type will be more meaningful.
+
+### 21. When is it okay to use `this`?  Is it okay, for example, to dereference a property using `this`, even though the instance property is available by its' name and no `this` qualifier?
+
+Generally, avoid using `this` to avoid unnecessary clutter.  Assuming you naming conventions are solid, prefixing with `this` will not disambiguate and it is not adding any value.
