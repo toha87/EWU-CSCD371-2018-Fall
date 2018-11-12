@@ -106,3 +106,9 @@ While mistakenly having one or two won't affect the behvior, they add clutter wi
 ### 25. Is it okay to have parameter names of a single letter?
 
 Presumably you can come up with a better name so generally, no.  Use a word or set of words that provides more description on what the parameters/variable is used for.
+
+### 26. What is the correct signature of a deconstructor?
+
+A deconstructor is called Deconstruct, returns void, and takes only out parameters which.  E.g. 
+`public void Deconstruct(
+    out string directoryName, out string fileName, out string extension) {...}`
