@@ -98,3 +98,7 @@ No, doing so will force you to have a `Main` method even though main doesn't hav
 ### 23. Is it okay to have a readonly property that is only set with a field initializer or a constant value?
 
 No, if the value is always the same constant (hard coded) value, then you may as well declare the property as a constant.
+
+### 24. Is it okay to have extra using directives even if they aren't ever used.
+
+While mistakenly having one or two won't affect the behvior, they add clutter without value.  Having `using System.Threading.Tasks` but never using it misleads a reviewer into thinking they need to look out for synchronization issues for example.
