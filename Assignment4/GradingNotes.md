@@ -75,3 +75,7 @@ Having an internal or private property that is never invoked doesn't make sense.
 ### 18. For properties (like `InstanceCount` whose value is maintained by the class that contains the property, should the access modifier be public or private?
 
 Almost certainly it should be private.  Allowing another class to modify the values of the instance count exposes the property to having an invalid value.
+
+### 18. Is it okay to have properties that are reference types and allow null.
+
+Certainly... However, you need to be check for null befroe dereferencing. In general you should avoid allowing collection properties to be null.
