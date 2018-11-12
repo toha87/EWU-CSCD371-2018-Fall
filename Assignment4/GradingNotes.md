@@ -57,3 +57,11 @@ Use PascalCase (e.g. `PropertyName`).  Avoid `propertyName` as that overlaps wit
 ### 14. If I use `string.Split()` but there is no separator within the string that is split, can I rely on the exception thrown when accessing the array returned from `Split()` to provide validation?
 
 No, the exception thrown would be `IndexOutOfRangeException` which provides no information to the caller about what the problem was.  Instead, throw and `ArgumentException` that provides information to the caller about what to correct.
+
+### 15. How do you invoke a Deconstrutor?
+
+While you can obviously just call as a normal method, the point of the deconstructor is to return the values into a tuple as in
+`        Person person = new Person("John", "Doe");
+         (string firstName,string lastName) = person;`
+
+
