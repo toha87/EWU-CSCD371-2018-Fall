@@ -102,3 +102,7 @@ No, if the value is always the same constant (hard coded) value, then you may as
 ### 24. Is it okay to have extra using directives even if they aren't ever used.
 
 While mistakenly having one or two won't affect the behvior, they add clutter without value.  Having `using System.Threading.Tasks` but never using it misleads a reviewer into thinking they need to look out for synchronization issues for example.
+
+### 25. Is it okay to have parameter names of a single letter?
+
+Presumably you can come up with a better name so generally, no.  Use a word or set of words that provides more description on what the parameters/variable is used for.
