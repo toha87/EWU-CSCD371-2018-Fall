@@ -124,3 +124,7 @@ Generally use `string` but whichever you choose, be consistent throughout.  Don'
 ### 29. Is it okay to have public fields?
 
 Public, even protected fields should be avoided.  Just use properties or make the field private and wrap it with a property.
+
+### 30. Should methods that don't access any instance data be static?
+
+Yes, undoubtedly, even if they are private.
