@@ -71,3 +71,7 @@ Generally, that is true.  You could follow a different convention that use tests
 ### 17. Is it okay to have a private or internal property that is never invoked?
 
 Having an internal or private property that is never invoked doesn't make sense.  It just clutters the code, reduces your code coverage numbers, and adds no value.  Don't be afraid to delete code that isn't being used?
+
+### 18. For properties (like `InstanceCount` whose value is maintained by the class that contains the property, should the access modifier be public or private?
+
+Almost certainly it should be private.  Allowing another class to modify the values of the instance count exposes the property to having an invalid value.
