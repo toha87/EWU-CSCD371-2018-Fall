@@ -82,3 +82,7 @@ Certainly... However, you need to be check for null befroe dereferencing. In gen
 ### 19. Should I keep track of `UniversityCourse` instances separately from `Event` instance count?
 
 If `UniversityCourse` derives from `Event` then every time you create a `UniversityCourse` you would create an `Event`.  The result is that an instance counter in `Event` should be sufficient to count all instances of `Event`.  However, using the `Event`'s implementation of `InstanceCount` from `UniversityCourse` would not reflect the actual `UniversityCourse`'s instance count.  Thus, a separate counter is required.  What makes this difficult is that `Event`s instance count is available from `UniversityCourse` via inheritance making it confusing which one to use.  The best approach is probably to use the new modifier on the `UniversityCourse`'s instance count (but this is rare and no points were deducted if you didn't have this solution). 
+
+### 20. What exception type should be thrown when a value assigned to a property is not valid?
+
+When assigned null and it isn't value use `ArgumentNullException`.  For values other than null, `ArgumentException` is generally correct unless another exception type will be more meaningful.
