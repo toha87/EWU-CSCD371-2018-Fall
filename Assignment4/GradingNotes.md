@@ -90,3 +90,7 @@ When assigned null and it isn't value use `ArgumentNullException`.  For values o
 ### 21. When is it okay to use `this`?  Is it okay, for example, to dereference a property using `this`, even though the instance property is available by its' name and no `this` qualifier?
 
 Generally, avoid using `this` to avoid unnecessary clutter.  Assuming you naming conventions are solid, prefixing with `this` will not disambiguate and it is not adding any value.
+
+### 22. Should all projects be of `OutputType` "Exe"?
+
+No, doing so will force you to have a `Main` method even though main doesn't have any code.  For projects that are only defining an API and not actually needing a start, use a Library project instaed.
