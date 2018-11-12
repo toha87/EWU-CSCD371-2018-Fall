@@ -66,4 +66,4 @@ While you can obviously just call as a normal method, the point of the deconstru
 
 ### 16. Should all classes under test have a corresponding test class?
 
-Generally, that is true.  You could follow a different convention that use tests callses for functionlity rather than per class but this wouldn't be common for small test projects were a one-to-one match from class under test to test class is the simplest.
+Generally, that is true.  You could follow a different convention that use tests callses for functionlity rather than per class but this wouldn't be common for small test projects were a one-to-one match from class under test to test class is the simplest.  If for example, you only tested `Application` from `CourseTests` and `EventTests` where would you test for an object that wasn't a `UniversityCourse` or and `Event`?
