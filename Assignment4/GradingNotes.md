@@ -112,3 +112,7 @@ Presumably you can come up with a better name so generally, no.  Use a word or s
 A deconstructor is called Deconstruct, returns void, and takes only out parameters which.  E.g. 
 `public void Deconstruct(
     out string directoryName, out string fileName, out string extension) {...}`
+    
+### 27. Given a `Get<propertyname>` and a `Set<propertyname>` methods, should refactoring into a property be used.
+
+Yes, almost always unless you have a specific reason not to but it would be highly unusual (and having a static property would not justify the methods).  You should certainly not have both.  
