@@ -94,3 +94,7 @@ Generally, avoid using `this` to avoid unnecessary clutter.  Assuming you naming
 ### 22. Should all projects be of `OutputType` "Exe"?
 
 No, doing so will force you to have a `Main` method even though main doesn't have any code.  For projects that are only defining an API and not actually needing a start, use a Library project instaed.
+
+### 23. Is it okay to have a readonly property that is only set with a field initializer or a constant value?
+
+No, if the value is always the same constant (hard coded) value, then you may as well declare the property as a constant.
