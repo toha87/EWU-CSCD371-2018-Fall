@@ -25,7 +25,6 @@ You should always identify the parameter name for which the exception is being t
 
 No.  If you have tests with pattern matching against `Event` and `UniversityCourse` you will notice that the most derived implementation is invoked such that you only need to have a case statement for `Event` assuming all it does is invoke `GetSummaryInformation()`.
 
-
 ### 7. Is it okay to change the value assigned in the setter of a property?
 
 This is relatively unusual and possibly unexpected to the caller.  Use caution when changing the value.  When setting a value programmers expect the value the passed to be assigned. If you change it (invoke Trim() on a string for example) it might be unexpected behavior.  That doesn't mean don't, but you would certainly want to document this at a minimum.  If you don't want to allow pre/post fix spaces, consider throwing an exception instead.
@@ -79,3 +78,7 @@ Almost certainly it should be private.  Allowing another class to modify the val
 ### 18. Is it okay to have properties that are reference types and allow null.
 
 Certainly... However, you need to be check for null befroe dereferencing. In general you should avoid allowing collection properties to be null.
+
+### 19. Should I keep track of `UniversityCourse` instances separately from `Event` instance count?
+
+If `UniversityCourse` derives from `Event` then every time you create a `UniversityCourse` you would create an `Event`.  The result is that an instance counter in `Event` should be sufficient to count all instances of `Event`.  However, using the `Event`'s implementation of `InstanceCount` from `UniversityCourse` would not reflect the actual `UniversityCourse`'s instance count.  Thus, a separate counter is required.  What makes this difficult is that `Event`s instance count is available from `UniversityCourse` via inheritance making it confusing which one to use.  The best approach is probably to use the new modifier on the `UniversityCourse`'s instance count (but this is rare and no points were deducted if you didn't have this solution). 
