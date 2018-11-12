@@ -116,3 +116,7 @@ A deconstructor is called Deconstruct, returns void, and takes only out paramete
 ### 27. Given a `Get<propertyname>` and a `Set<propertyname>` methods, should refactoring into a property be used.
 
 Yes, almost always unless you have a specific reason not to but it would be highly unusual (and having a static property would not justify the methods).  You should certainly not have both.  
+
+### 28. Which is preferable, `string`, the key word, or `String` the .NET Type?
+
+Generally use `string` but whichever you choose, be consistent throughout.  Don't use both.
