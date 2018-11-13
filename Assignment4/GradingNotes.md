@@ -157,3 +157,7 @@ IF there is no change of a changes in timezone then use `DateTime`.  If you need
 ### 37. Which is better for checking for null, `is null` or `== null`?
 
 Generally they are identical, however, if the equality operator is overloaded, `is null` is preferable so always use `is null`.
+
+### 38. What is the naming convention for items in a tuple?
+
+Use PascalCase for tuple names and standard camelCase when declaring/using local variables in a tuple type syntax.
