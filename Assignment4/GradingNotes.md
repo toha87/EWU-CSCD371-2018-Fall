@@ -144,3 +144,7 @@ Actually, you should avoid abbreviations unless you have decided it is common in
 ### 34. When calling `text.Split()`, what happens if the search value doesn't exist?
 
 Assuming the `text` is not null (which would throw an exception) or empty string, the result is an array of one item, the original value of text.  Therefore, there is not need to check for null or empty for the first item in the array (assuming `text` is not an empty string to start.  Furthermore, you need to check the `Count` on the array returned before accessing the second element of the array as it might not exist if the search value was not found.
+
+### 35. How can I group all my properties into a collapsable group.
+
+While not required (in fact they are occasionally controversial and accused of adding code clutter), you can use `#region`s.  No matter what, I would regions in favor of just commenting the grouping.
