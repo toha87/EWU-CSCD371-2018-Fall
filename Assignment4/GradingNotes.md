@@ -19,7 +19,7 @@ Hmmmm.... the Guideline is, "AVOID using implicitly typed local variables unless
 
 ### 5. Shoud I specify the message when instantiating a `ArgumentNullException`?
 
-You should always identify the parameter name for which the exception is being thrown and you should do so using the `nameof` operator. However, there is generally no reason to also provide a message unless the message is adding value above and beyond the default message for an `ArgumentNullException`.  The general message, given a parameter name of data, is: "Value cannot be null. Parameter name: data"
+You should always identify the parameter name for which the exception is being thrown and you should do so using the `nameof` operator.  For property setters, use `nameof(value)`. However, there is generally no reason to also provide a message unless the message is adding value above and beyond the default message for an `ArgumentNullException`.  The general message, given a parameter name of data, is: "Value cannot be null. Parameter name: data"
 
 ### 6. When using pattern matching with a polymorphism (i.e. `UniversityCourse` derives from `Event` and either or both have a `GetSummaryInformation()` method) should I have _case_ statments for both types (i.e  `UniversityCourse` and `Event`). 
 
