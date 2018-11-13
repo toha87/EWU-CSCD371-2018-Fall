@@ -24,6 +24,7 @@ You should always identify the parameter name for which the exception is being t
 ### 6. When using pattern matching with a polymorphism (i.e. `UniversityCourse` derives from `Event` and either or both have a `GetSummaryInformation()` method) should I have _case_ statments for both types (i.e  `UniversityCourse` and `Event`). 
 
 No.  If you have tests with pattern matching against `Event` and `UniversityCourse` you will notice that the most derived implementation is invoked such that you only need to have a case statement for `Event` assuming all it does is invoke `GetSummaryInformation()`.
+In addition, be sure to check for null if that is a possible value.
 
 ### 7. Is it okay to change the value assigned in the setter of a property?
 
