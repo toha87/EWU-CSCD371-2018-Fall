@@ -152,3 +152,7 @@ While not required (in fact they are occasionally controversial and accused of a
 ### 36. How should I store date time in .NET?
 
 IF there is no change of a changes in timezone then use `DateTime`.  If you need to consider the timezone, then store the time in UTC - `DateTimeOffset`.  To store only the hour (not the minutes) for an event seems overly restrictive to when a class can start and stop.
+
+### 37. Which is better for checking for null, `is null` or `== null`?
+
+Generally they are identical, however, if the equality operator is overloaded, `is null` is preferable so always use `is null`.
