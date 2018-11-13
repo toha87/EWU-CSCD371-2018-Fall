@@ -148,3 +148,7 @@ Assuming the `text` is not null (which would throw an exception) or empty string
 ### 35. How can I group all my properties into a collapsable group.
 
 While not required (in fact they are occasionally controversial and accused of adding code clutter), you can use `#region`s.  No matter what, I would regions in favor of just commenting the grouping.
+
+### 36. How should I store date time in .NET?
+
+IF there is no change of a changes in timezone then use `DateTime`.  If you need to consider the timezone, then store the time in UTC - `DateTimeOffset`.  To store only the hour (not the minutes) for an event seems overly restrictive to when a class can start and stop.
