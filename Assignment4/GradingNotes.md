@@ -140,3 +140,7 @@ No, this should be avoided.  If someone uses your API to set a property and you 
 ### 33. Is it okay to use abbreviations for various names (classes, variables, etc.)?
 
 Actually, you should avoid abbreviations unless you have decided it is common in the domain with which you are working and you use it consistently in all the code.  Consider creating a "glossary.md" file where you want to use abbreviations consistently.
+
+### 34. When calling `text.Split()`, what happens if the search value doesn't exist?
+
+Assuming the `text` is not null (which would throw an exception) or empty string, the result is an array of one item, the original value of text.  Therefore, there is not need to check for null or empty for the first item in the array (assuming `text` is not an empty string to start.
