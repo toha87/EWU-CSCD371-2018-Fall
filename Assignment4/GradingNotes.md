@@ -161,3 +161,7 @@ Generally they are identical, however, if the equality operator is overloaded, `
 ### 38. What is the naming convention for items in a tuple?
 
 Use PascalCase for tuple names and standard camelCase when declaring/using local variables in a tuple type syntax.
+
+### 39. What is the correct casing for a parameter?
+
+Parameters have the same scope as local variables and follow the same casing convention, camelCase.  This is especially important to avoid names that overlap with property names (which are PascalCase).
