@@ -165,3 +165,7 @@ Use PascalCase for tuple names and standard camelCase when declaring/using local
 ### 39. What is the correct casing for a parameter?
 
 Parameters have the same scope as local variables and follow the same casing convention, camelCase.  This is especially important to avoid names that overlap with property names (which are PascalCase).
+
+### 40. Should I wrap a static field with an instance property.
+
+No.  If the property uses the static field as the backing store then the property should be static too.  A user of an instance property expects the data stored to be instance based if the property is instance based.
