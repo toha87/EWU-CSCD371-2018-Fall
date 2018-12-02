@@ -169,3 +169,7 @@ Parameters have the same scope as local variables and follow the same casing con
 ### 40. Should I wrap a static field with an instance property.
 
 No.  If the property uses the static field as the backing store then the property should be static too.  A user of an instance property expects the data stored to be instance based if the property is instance based.
+
+### 41. Can you keep track of instances of an object with an count increment in the constructor and a decrement in the deconstructor?
+
+Yes. The destructur is accurate in decrementing the number of instances.  However the count may be seemingly off  as it might not be accurate in keeping the number of accessible/available instances since the garbage collector is indeterminate in when it cleans up the memory.  When implementing a destructor, remember you should probably implement the IDisposable pattern.
