@@ -7,6 +7,12 @@ namespace Assignment9.Tests
     [TestClass]
     public class Assignment9UnitTests
     {
+        /// <summary> 
+        /// I know its a last assignment but
+        /// I just started using ReSharper and it changed completely my code habits
+        /// Thank you guys for teaching such as wonderful class!
+        /// </summary> 
+
         [TestMethod]
         public void InventorNamesTestWithSpecifiedCountry_Count()
         {
@@ -38,13 +44,14 @@ namespace Assignment9.Tests
             List<string> listWithLastNames = PatentDataAnalyzer.InventoryLastNames();
 
             var firstElement = listWithLastNames.First();
-
+            // Since "Jacob" has max id it should be the first in this list
             Assert.AreEqual("Jacob", firstElement);
         }
 
         [TestMethod]
         public void SingleCommaSeparatedListOfStateAndTheCountryStringsForEachInventor()
         {
+            // manually did this string from PatentData
             string expected = "PA-USA, NC-USA, NY-USA, Northumberland-UK, IL-USA";
 
             string list = PatentDataAnalyzer.LocationsWithInventors();
